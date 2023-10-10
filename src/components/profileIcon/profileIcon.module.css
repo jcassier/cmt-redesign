@@ -1,0 +1,92 @@
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 15px;
+}
+.profileButton {
+  color: var(--dark-red);
+  border-radius: 100%;
+  border: 2px solid var(--dark-red);
+  background-color: transparent;
+  width: 56px;
+  height: 56px;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding-left: 7px;
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.profileButton:hover,
+.activeProfileBtn {
+  color: white;
+  border-radius: 100%;
+  border: 2px solid var(--dark-red);
+  background-color: var(--dark-red);
+  width: 56px;
+  height: 56px;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  padding-left: 7px;
+}
+
+.profileButton:hover,
+.activeProfileBtn:hover {
+  cursor: pointer;
+}
+
+.profileOverlay {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  width: 226px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 23px;
+  box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.09);
+  transform: translateY(75px);
+}
+
+.profileOverlay > button {
+  position: relative;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 9px;
+  align-items: center;
+  font-size: 17px;
+  padding: 12px;
+  z-index: 1000;
+  color: black;
+  text-decoration: none;
+  width: 100%;
+}
+.profileOverlay > button:hover {
+  cursor: pointer;
+  background-color: var(--light-gray);
+}
+
+.profileOverlay > :first-child {
+  border-radius: 23px 23px 0 0 !important;
+}
+
+.profileOverlay > :last-child {
+  border-radius: 0 0 23px 23px !important;
+}
+
+.profileOverlay svg {
+  height: 30px;
+  width: auto;
+  stroke-width: 1.5;
+}

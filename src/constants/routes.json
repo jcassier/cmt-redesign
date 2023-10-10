@@ -1,0 +1,15 @@
+{
+  "HOME": "/",
+  "CHAPTER": "/chapter/:chapter",
+  "MEMBERS": "/:chapter/members",
+  "PLEDGING": "/:chapter/pledging",
+  "ANNUAL_REPORT": "/:chapter/annual-report",
+  "FINANCES": "/:chapter/finances",
+  "TRAININGS": "/:chapter/trainings",
+  "REGION_METRICS": "/region",
+  "REGION_METRICS_PATH":"region/:region",
+  "NAT_OFF": "/national-officers",
+  "PROFLE": "/my-profile",
+  "HELP": "/help",
+  "LOGIN": "/login"
+}
