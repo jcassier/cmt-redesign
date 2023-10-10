@@ -1,5 +1,8 @@
-.app {
-  text-align: center;
+.appContainer:has(.bodyContainer) {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 980px;
 }
 
 .appLogo {
@@ -14,7 +17,6 @@
 }
 
 .appHeader {
-  background-image: var(--bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,13 +28,4 @@
 
 .appLink {
   color: #61dafb;
-}
-
-@keyframes appLogoSpin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
